@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(
+    to right,
+    #5fc3e4,
+    #e55d87
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 20px;
+  margin: 0.4rem 0.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  height: 10vh;
+  justify-content: space-between;
+  transition: all 300ms ease-in;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem;
+}
+.icon > i,
+.icon > p {
+  font-size: 1.5rem;
+  margin: 0.2rem;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+li > a {
+  text-decoration: none;
+  color: #ffff;
+}
+.mid {
+  width: auto;
+  margin-right: 1rem;
+}
+.list {
+  justify-content: space-evenly;
+}
+.list > li {
+  margin: 0rem 0.1rem;
+  padding: 0.4rem 0.9rem;
+  font-size: 1.5rem;
+  transition: all 300ms ease-out;
+  border-radius: 10px;
+  border-bottom: 0.4rem solid transparent;
+}
+.list > li:hover {
+  border-bottom: 0.4rem solid #fff;
+}
+.list > li:hover a {
+  color: #e55d87;
+}
+.bars {
+  outline: none;
+  background: transparent;
+  font-size: 1.5rem;
+  border: none;
+  margin-right: 2rem;
+  color: white;
+  display: none;
+}
+@media only screen and (max-width: 785px) {
+  .mid {
+    background-color: #e55d87;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    width: 0vw;
+    height: 100vh;
+  }
+  .mid ul {
+    flex-direction: column;
+  }
+  .bars {
+    display: block;
+  }
+}
