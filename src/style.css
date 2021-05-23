@@ -3,11 +3,24 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  background: linear-gradient(
+/* background: linear-gradient(
     to right,
     #5fc3e4,
     #e55d87
+  ); */
+/* body {
+  background: linear-gradient(
+    to right,
+    #8a307f,
+    #79a7d3,
+    #6883bc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* } */
+body {
+  background: linear-gradient(
+    to right,
+    #000428,
+    #004e92
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .center {
@@ -53,8 +66,8 @@ li > a {
   color: #ffff;
 }
 .mid {
-  width: auto;
   margin-right: 1rem;
+  transition: all 300ms ease-in;
 }
 .list {
   justify-content: space-evenly;
@@ -73,10 +86,11 @@ li > a {
 .list > li:hover a {
   color: #e55d87;
 }
-.bars {
+.bars,
+.cross {
   outline: none;
   background: transparent;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   border: none;
   margin-right: 2rem;
   color: white;
@@ -84,17 +98,41 @@ li > a {
 }
 @media only screen and (max-width: 785px) {
   .mid {
-    background-color: #e55d87;
+    background: linear-gradient(to left, #000428, #004e92);
     position: absolute;
     left: 0px;
-    top: 20px;
+    top: -7px;
+    margin-top: 0px;
+    margin-right: 0px;
     width: 0vw;
-    height: 100vh;
+    height: 98vh;
+    overflow: hidden;
   }
   .mid ul {
     flex-direction: column;
+    margin-top: 4em;
   }
-  .bars {
+  .bars,
+  .cross {
     display: block;
   }
+  .cross {
+    position: absolute;
+    top: 1.6rem;
+    right: 1rem;
+    font-size: 1.9rem;
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+/* Hero */
+
+.hero {
+  background: url("../resource/pexels-kendall-hoopes-1499629.jpg") center
+    center/cover;
+  width: 100vw;
+  height: 88vh;
+  position: relative;
+  margin: 0rem 0.5rem;
 }
