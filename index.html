@@ -9,6 +9,8 @@
     <!--My Css-->
     <link rel="stylesheet" href="./src/style.css">
 
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
     <!-- Fontawesome-Css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -27,7 +29,7 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="nav">
         <div class="navbar center">
             <span class="icon"><i class="fas fa-laptop"></i>
                 <p>Deevesh..</p>
@@ -36,7 +38,7 @@
                 <ul class="list">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Projects</a></li>
                     <li><a href="#">Skills</a></li>
                     <li><a href="#">Contact-Us</a></li>
                 </ul>
@@ -50,21 +52,135 @@
         <div class="hero-content">
             <h3>I'am</h3>
             <h1>Deevesh</h1>
-            <h4>a<br><span id="type1"></span></h4>
-            <button type="button" class="hero-btn"><a href="#">Hire ME</a></button>
-            <button class="button"><span>Hover </span></button>
+            <h4>a <span id="type1"> </span></h4>
+        </div>
+        <div class="icons">
+            <ul class="list">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
         </div>
         <img src="./resource/mandala-2031287_1280.png" class="wheel" alt="spinner">
 
     </section>
     <section class="section-about" id="About">
-        <h1>About</h1>
+        <div class="title">
+            <h1>About Me</h1>
+        </div>
+        <div class="about-content">
+            <div class="left"></div>
+            <div class="right">
+                <h1>I'am Deevesh</h1>
+                <h2>a <span id="type2"></span></h2>
+                <p>An energetic and passionate college student pursuing a B.Tech in Computer Science. Aiming
+                    to use my knowledge gained till now in the field of Computer Science, my
+                    curiosity to gain
+                    new knowledge, and
+                    to utilize my skills and abilities in the industry that offers professional growth while being
+                    resourceful, innovative
+                    and flexible, and helpful
+                    to others.</p>
+                <button class="button"><a href="#"><span>Hire Me </span></a></button>
+                <!-- <button class="button"><a href="./resource/resume-jpeg.jpg" download="Resume"><span>Hover </span></a></button> -->
+            </div>
+        </div>
     </section>
+    <section class="section-pro" id="Education">
+        <div class="title">
+            <h1 class="glow">Projects</h1>
+        </div>
+        <div class="project-container">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front Covid">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Covid-Tracker</h1>
+                        <p>Created Using React.js (coming soon)</p>
+                        <p>Display the daily Update Related to Covid-19</p>
+                        <button class="button"><a href="#"><span>View </span></a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front Port">
+                    </div>
+                    <div class="flip-card-back ">
+                        <h1>My PortFolio</h1>
+                        <p>Basic Web Technologies Used</p>
+                        <p>To showcase my Skills in a unique and precise way</p>
+                        <button class="button"><a href="#"><span>View </span></a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front Hotel">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Hotel Website</h1>
+                        <p>Using MERN (coming soon)</p>
+                        <p>For Booking Hotels all Over the World</p>
+                        <button class="button"><a href="#"><span>View </span></a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-skills" id="skills">
+        <div class="title">
+            <h1>Skills</h1>
+        </div>
+        <div class="skills-content">
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-js-square"></i>
+            <i class="fab fa-react"></i>
+            <i class="fab fa-node-js"></i>
+            <i class="fas fa-database"></i>
+            <i class="fab fa-python"></i>
+        </div>
+    </section>
+    <section class="section-contact center" id="contact">
+        <div class="contact">
+            <div class="left-cont">
+                <div class="title">
+                    <h1>Connect With Me</h1>
+                </div>
+                <div class="ldetail">
+                    <h2><a href="#"><i class="far fa-user"></i> Deevesh Gupta</a> </h2>
+                    <h2><a href="#"><i class="fab fa-github"></i> Github</a> </h2>
+                    <h2><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a> </h2>
+                </div>
+            </div>
+            <div class="form">
+                <form action="" onsubmit="handlesubmit()" class="center fcenter">
+                    <input type="text" placeholder="Name">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <textarea name="" id="" cols="30" rows="4" placeholder="Your Query"></textarea>
+                    <button class="button" type="submit"><a href="#"><span>Hire Me </span></a></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Created By <span>Deevesh</span> | &copy; 2021 All Rights reserved</p>
+    </footer>
+    <!--AOS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!--GlideJs-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+    <!--TypeIt-->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+    <!--GSASP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <!-- My script -->
+    <script src="./src/script.js"></script>
 </body>
-<!-- My script -->
-<script src="./src/script.js"></script>
-
-<!-- TyptIt -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>
 
 </html>
