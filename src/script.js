@@ -9,16 +9,16 @@ const closeSidebar = () => {
 };
 
 const navBar = document.querySelector(".nav");
-//Fix NAv
-// const navHeight = navBar.getBoundingClientRect().height;
-// window.addEventListener("scroll", () => {
-//   const scrollHeight = window.pageYOffset;
-//   if (scrollHeight > navHeight) {
-//     navBar.classList.add("fix-nav");
-//   } else {
-//     navBar.classList.remove("fix-nav");
-//   }
-// });
+// Fix NAv
+const navHeight = navBar.getBoundingClientRect().height;
+window.addEventListener("scroll", () => {
+  const scrollHeight = window.pageYOffset;
+  if (scrollHeight > navHeight) {
+    navBar.classList.add("fix-nav");
+  } else {
+    navBar.classList.remove("fix-nav");
+  }
+});
 
 new TypeIt("#type1", {
   speed: 120,
@@ -52,4 +52,20 @@ new TypeIt("#type2", {
   .delete(10)
   .go();
 
-// AOS.init();
+gsap.from(".nav-item", {
+  opacity: 0,
+  duration: 1,
+  delay: 0.9,
+  y: -30,
+  stagger: 0.2,
+});
+
+gsap.from(".icons li", {
+  opacity: 0,
+  duration: 1,
+  delay: 2.9,
+  y: -30,
+  stagger: 0.2,
+});
+
+AOS.init();

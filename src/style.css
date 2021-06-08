@@ -16,6 +16,9 @@
     #6883bc
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 /* } */
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: linear-gradient(to right, #000428, #004e92);
   color: #fff; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -57,6 +60,8 @@ h1 {
   position: sticky;
   top: 0px;
   left: 0px;
+  background: linear-gradient(to right, #000428, #004e92);
+  z-index: 10;
 }
 
 ul {
@@ -114,7 +119,7 @@ button {
     left: 0px;
     top: -7px;
     width: 0vw;
-    height: 99.5vh;
+    height: 101vh;
     overflow: hidden;
     z-index: 100;
   }
@@ -176,7 +181,7 @@ button {
   filter: invert(100%);
   animation: mymove 50000ms linear 0s infinite normal;
 }
-/* @keyframes mymove {
+@keyframes mymove {
   1% {
     transform: rotate(0deg);
   }
@@ -192,7 +197,7 @@ button {
   100% {
     transform: rotate(360deg);
   }
-} */
+}
 
 @media only screen and (max-width: 1024px) {
   .wheel {
@@ -222,20 +227,7 @@ button {
     font-size: 4rem;
   }
 }
-/* @media only screen and (max-width: 785px) {
-  .wheel {
-    right: -83%;
-  }
-  .hero-content h1 {
-    font-size: 6.3rem;
-  }
-  .hero-content h3 {
-    font-size: 6rem;
-  }
-  #type1 {
-    font-size: 3rem;
-  }
-} */
+
 @media only screen and (max-width: 415px) {
   .wheel {
     right: -128%;
@@ -567,7 +559,7 @@ button {
   }
   .button {
     width: 7rem;
-    height: 2.9rem;
+    height: 2rem;
     font-size: 1rem;
   }
   .right h1 {
@@ -592,7 +584,7 @@ button {
   justify-content: center;
   flex-direction: column;
   background: url("../resource/pWall.jpg") center center/cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 
 .section-pro > .title h1 {
