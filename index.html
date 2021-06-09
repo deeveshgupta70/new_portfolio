@@ -157,11 +157,11 @@
                 </div>
             </div>
             <div class="form">
-                <form action="" onsubmit="handlesubmit()" class="center fcenter" id="contact-form">
-                    <input type="text" placeholder="Name">
+                <form id="contact-form">
+                    <input type="text" placeholder="Name" name="from_name" id="from_name">
                     <input type="email" name="email" id="email" placeholder="Email">
-                    <textarea name="" id="" cols="30" rows="4" placeholder="Message"></textarea>
-                    <button class="button" type="submit" value="submit"><a href="#"><span>Send </span></a></button>
+                    <textarea name="message" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+                    <button class="button" type="submit" id="fbutton"><a href="#"><span>Send</span></a></button>
                 </form>
             </div>
         </div>
@@ -169,6 +169,12 @@
     <footer>
         <p>Created By <span>Deevesh</span> | &copy; 2021 All Rights reserved</p>
     </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_Ip459bcmqG48c7GwnmVA3");
+        })();
+    </script>
     <!--AOS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <!--TypeIt-->
@@ -177,6 +183,12 @@
     <!--GSASP-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <!-- My script -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_Ip459bcmqG48c7GwnmVA3");
+        })();
+    </script> -->
     <script src="./src/script.js"></script>
 </body>
 

@@ -20,6 +20,46 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// function sendMail(params) {
+//   const data = {
+//     from_name: document.getElementById("name").value,
+//     email: document.getElementById("email").value,
+//     message: document.getElementById("Message").value,
+//   };
+//   console.log(data);
+
+//   emailjs
+//     .send("service_33nknsw", "template_91xl5vi", data)
+//     .then(function (res) {
+//       console.log("success", res.status);
+//     });
+// }
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const serviceID = "service_33nknsw";
+    const templateID = "template_91xl5vi";
+    // const data = {
+    //   from_name: document.getElementById("from_name").value,
+    //   email: document.getElementById("email").value,
+    //   message: document.getElementById("message").value,
+    // };
+
+    emailjs.sendForm(serviceID, templateID, this).then(
+      (res) => {
+        console.log("success", res.status);
+      },
+      (err) => {
+        console.log(JSON.stringify(err));
+      }
+    );
+    document.getElementById("message").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("from_name").value = "";
+  });
+
 new TypeIt("#type1", {
   speed: 120,
   loop: true,

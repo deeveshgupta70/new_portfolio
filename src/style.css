@@ -60,7 +60,8 @@ h1 {
   position: sticky;
   top: 0px;
   left: 0px;
-  background: linear-gradient(to right, #000428, #004e92);
+  /* background: linear-gradient(to right, #000428, #004e92); */
+  background-color: #dd9a05;
   z-index: 10;
 }
 
@@ -278,9 +279,16 @@ button {
 .icons li a {
   font-size: 2rem;
 
-  transition: all 300ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 .icons li {
+  cursor: pointer;
+}
+/* .list > li:hover {
+  background-color: #fff;
+} */
+.icons li:hover {
+  background-color: transparent;
   cursor: pointer;
 }
 .icons li:hover a {
@@ -778,6 +786,12 @@ button {
   width: 60%;
   height: 70%;
 }
+#contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .fcenter {
   flex-direction: column;
 }
@@ -873,6 +887,7 @@ textarea {
   }
   .contact {
     flex-direction: column;
+    height: 70%;
   }
   .left-cont {
     width: 100%;
@@ -880,9 +895,6 @@ textarea {
   }
   .form {
     width: 100%;
-    height: 70%;
-  }
-  .contact {
     height: 70%;
   }
 }
