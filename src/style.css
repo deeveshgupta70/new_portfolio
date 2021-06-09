@@ -20,7 +20,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: linear-gradient(to right, #000428, #004e92);
+  background: linear-gradient(to right, #780206, #061161);
   color: #fff; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   overflow-x: hidden;
   font-family: Poppins, sans-serif;
@@ -61,7 +61,7 @@ h1 {
   top: 0px;
   left: 0px;
   /* background: linear-gradient(to right, #000428, #004e92); */
-  background-color: #dd9a05;
+  background: linear-gradient(to left, #780206, #061161);
   z-index: 10;
 }
 
@@ -115,7 +115,7 @@ button {
 }
 @media only screen and (max-width: 785px) {
   .mid {
-    background: linear-gradient(to left, #000428, #004e92);
+    background: linear-gradient(to left, #780206, #061161);
     position: absolute;
     left: 0px;
     top: -7px;
@@ -395,9 +395,6 @@ button {
 .right h2 {
   font-size: 2.5rem;
 }
-/* .left{
-  background: url("../resource/pexels-sora-shimazaki-5926397.jpg") ;
-} */
 
 .button {
   border-radius: 4px;
@@ -591,8 +588,8 @@ button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: url("../resource/pWall.jpg") center center/cover;
-  /* background-attachment: fixed; */
+  /* background: linear-gradient(to right, #780206, #061161);
+  background: linear-gradient(to right, #8e0e00, #1f1c18); */
 }
 
 .section-pro > .title h1 {
