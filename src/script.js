@@ -5,7 +5,7 @@ const openSidebar = () => {
   mid.style.width = "70vw";
 };
 const closeSidebar = () => {
-  mid.style.width = "0vw";
+  if (screen.width < 769) mid.style.width = "0vw";
 };
 
 const navBar = document.querySelector(".nav");
@@ -19,6 +19,12 @@ window.addEventListener("scroll", () => {
     navBar.classList.remove("fix-nav");
   }
 });
+
+const Checksize = () => {
+  if (screen.width > 769) {
+    mid.style.width = "50%";
+  }
+};
 
 // function sendMail(params) {
 //   const data = {

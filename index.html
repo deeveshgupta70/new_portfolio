@@ -25,7 +25,7 @@
 
 </head>
 
-<body>
+<body onresize="Checksize()">
     <nav class="nav">
         <div class="navbar center nav-item">
             <span class="icon"><i class="fas fa-laptop"></i>
@@ -90,43 +90,30 @@
             <h1 class="glow">Projects</h1>
         </div>
         <div class="project-container">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front Covid">
-                    </div>
-                    <div class="flip-card-back">
-                        <h1>Covid-Tracker</h1>
-                        <p>Created Using React.js (coming soon)</p>
-                        <p>Display the daily Update Related to Covid-19</p>
-                        <button class="button"><a href="#"><span>View </span></a></button>
-                    </div>
+            <div class="flip-card center">
+                <div class="flip-container">
+                    <h1>Covid-Tracker</h1>
+                    <p>Created Using React.js (coming soon)</p>
+                    <p>Display the daily Update Related to Covid-19</p>
+                    <button class="button"><a href="#"><span>View </span></a></button>
                 </div>
             </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front Port">
-                    </div>
-                    <div class="flip-card-back ">
-                        <h1>My PortFolio</h1>
-                        <p>Basic Web Technologies Used</p>
-                        <p>To showcase my Skills in a unique and precise way</p>
-                        <button class="button"><a href="#"><span>View </span></a></button>
-                    </div>
+            <div class="flip-card center">
+                <div class="flip-container">
+                    <h1>My PortFolio</h1>
+                    <p>Basic Web Technologies Used</p>
+                    <p>To showcase my Skills in a unique and precise way</p>
+                    <button class="button"><a href="#"><span>View </span></a></button>
                 </div>
             </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front Hotel">
-                    </div>
-                    <div class="flip-card-back">
-                        <h1>Hotel Website</h1>
-                        <p>Using MERN (coming soon)</p>
-                        <p>For Booking Hotels all Over the World</p>
-                        <button class="button"><a href="#"><span>View </span></a></button>
-                    </div>
+            <div class="flip-card center">
+                <div class="flip-container">
+                    <h1>Hotel Website</h1>
+                    <p>Using MERN </p>
+                    <p>For Booking Hotels all Over the World (coming soon)</p>
+                    <button class="button"><a href="#"><span>View </span></a></button>
                 </div>
             </div>
-        </div>
     </section>
     <section class="section-skills" id="skills">
         <div class="title">
@@ -137,7 +124,7 @@
             <i class="fab fa-html5" data-aos="fade-up" data-aos-duration="2000"></i>
             <i class="fab fa-js-square" data-aos="fade-up" data-aos-duration="3000"></i>
             <i class="fab fa-react" data-aos="fade-up" data-aos-duration="4000"></i>
-            <i class="fab fa-node-js" data-aos="fade-up" data-aos-duration="5000"></i>
+            <i class="fab fa-node-js" data-aos="fade-up" data-aos-duration="4000"></i>
             <i class="fas fa-database" data-aos="fade-up" data-aos-duration="6000"></i>
             <i class="fab fa-python" data-aos="fade-up" data-aos-duration="7000"></i>
         </div>
@@ -158,9 +145,9 @@
             </div>
             <div class="form">
                 <form id="contact-form">
-                    <input type="text" placeholder="Name" name="from_name" id="from_name">
-                    <input type="email" name="email" id="email" placeholder="Email">
-                    <textarea name="message" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+                    <input type="text" placeholder="Name" name="from_name" id="from_name" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <textarea name="message" id="message" cols="30" rows="4" placeholder="Message" required></textarea>
                     <button class="button" type="submit" id="fbutton"><a href="#"><span>Send</span></a></button>
                 </form>
             </div>
