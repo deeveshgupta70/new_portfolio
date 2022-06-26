@@ -632,7 +632,15 @@ button {
   flex-direction: column;
   border-radius: 10px;
 }
-
+.weather{
+  background: url('../resource/weather-pic.jpg') center/cover ;
+}
+.portFolio{
+  background: url('../resource/portFolio-pic.jpg') center/cover ;
+}
+.movieDb{
+  background: url('../resource/movie-pic.jpg') center/cover ;
+}
 .flip-container {
   width: 80%;
   height: 95%;
